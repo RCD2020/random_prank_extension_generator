@@ -6,7 +6,7 @@ def _generate_manifest(name, has_css=False):
     manifest = [
         '{',
         '   "manifest_version":3,',
-        f'   "name": {name},',
+        f'   "name": "{name}",',
         '   "version":"1.0",',
         '   "description": "Get pranked frfr",',
         '   "content_scripts": [',
@@ -21,7 +21,7 @@ def _generate_manifest(name, has_css=False):
 
     manifest += [
         '       }',
-        '   ],',
+        '   ]',
         '}'
     ]
 
